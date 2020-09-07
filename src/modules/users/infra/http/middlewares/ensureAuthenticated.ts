@@ -4,7 +4,7 @@ import { verify } from 'jsonwebtoken';
 import authConfig from '@config/auth';
 import AppError from '@shared/errors/AppError';
 
-interface TokenPayload {
+interface ITokenPayload {
   iat: string;
   exp: string;
   sub: string;
@@ -26,7 +26,7 @@ export default function ensumeAuthenticated(
 
     const decoded = verify(token, authConfig.jwt.secret);
 
-    const { sub } = decoded as TokenPayload;
+    const { sub } = decoded as ITokenPayload;
 
     // eslint-disable-next-line no-param-reassign
     resquest.user = {
