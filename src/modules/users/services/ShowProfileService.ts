@@ -4,7 +4,6 @@ import AppError from '@shared/errors/AppError';
 import IUsersRepository from '../repositories/IUsersRepository';
 
 import User from '../infra/typeorm/entities/User';
-import IHashProvider from '../providers/models/IHashProvider';
 
 interface IRequest {
   user_id: string;
@@ -22,6 +21,8 @@ class ShowProfileService {
     if (!user) {
       throw new AppError('User not found.');
     }
+
+    delete user.password;
 
     return user;
   }
