@@ -1,5 +1,5 @@
 Arguments: 
-  /home/eduardo/.nvm/versions/node/v12.18.3/bin/node /usr/share/yarn/bin/yarn.js add doenv
+  /home/eduardo/.nvm/versions/node/v12.18.3/bin/node /usr/share/yarn/bin/yarn.js add class-transforme
 
 PATH: 
   /home/eduardo/.local/bin:/home/eduardo/.nvm/versions/node/v12.18.3/bin:/home/eduardo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64:/snap/bin:/home/eduardo/bin:/home/eduardo/Android/Sdk/tools:/home/eduardo/Android/Sdk/tools:/home/eduardo/Android/Sdk/platform-tools:/home/eduardo/bin:/home/eduardo/Android/Sdk/tools:/home/eduardo/Android/Sdk/tools:/home/eduardo/Android/Sdk/platform-tools
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/doenv: Not found
+  Error: https://registry.yarnpkg.com/class-transforme: Not found
       at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/usr/share/yarn/lib/cli.js:140749:22)
       at Request.emit (events.js:315:20)
@@ -44,6 +44,7 @@ npm manifest:
       "celebrate": "^13.0.3",
       "cors": "^2.8.5",
       "date-fns": "^2.14.0",
+      "dotenv": "^8.2.0",
       "express": "^4.17.1",
       "express-async-errors": "^3.1.1",
       "handlebars": "^4.7.6",
@@ -1909,6 +1910,11 @@ Lockfile:
     version "6.2.0"
     resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
     integrity sha512-HygQCKUBSFl8wKQZBSemMywRWcEDNidvNbjGVyZu3nbZ8qq9ubiPoGLMdRDpfSrpkkm9BXYFkpKxxFX38o/76w==
+  
+  dotenv@^8.2.0:
+    version "8.2.0"
+    resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+    integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   
   dynamic-dedupe@^0.3.0:
     version "0.3.0"
